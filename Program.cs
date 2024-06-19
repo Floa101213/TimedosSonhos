@@ -44,14 +44,14 @@ for (int m = 0; m < quantidadeJogador; m++)
 {
     while (true)
     {
-        
+
         Console.Write($"{m} jogador(es) selecionados. Adicionar o Top # ");
         int jogadorselecionado = Convert.ToInt32(Console.ReadLine());
-        
+
         if (time.ToList().Any(f => f == jogadorselecionado))
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("Esse atleta já pertence ao seu time.");  
+            Console.WriteLine("Esse atleta já pertence ao seu time.");
             Console.ResetColor();
             continue;
         }
@@ -62,19 +62,19 @@ for (int m = 0; m < quantidadeJogador; m++)
             Console.WriteLine("jogador não encontrado.");
             Console.ResetColor();
             continue;
-        }        
+        }
 
         Console.WriteLine($"{lista[jogadorselecionado - 1]} foi o jogador selecionado... ");
 
         time[m] = jogadorselecionado;
-              
+
         Console.WriteLine($"\nSeu time dos sonhos é:\n");
 
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         List<int> timeList = time.ToList(); //converte a matriz em lista
         timeList.Sort(); //ordena a lista
         timeList.FindAll(t => t > 0) // Busca todos os jogadores já adicionados
-                .ForEach(t => Console.WriteLine($"\t{t} - {lista[t-1]}"));    //Exibe cada (Foreach) elemento (t)
+                .ForEach(t => Console.WriteLine($"\t{t} - {lista[t - 1]}"));    //Exibe cada (Foreach) elemento (t)
         Console.ResetColor();
         break;
     }
