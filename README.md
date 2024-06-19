@@ -57,6 +57,11 @@ Após montar seu draft completo, será exibido seu "DreamTeam" na tela. não a l
 
 Depois do término do download, extraia os arquivos compactados na pasta desejada e execute o programa no formato (.exe) se for Windows, ou se no caso for outro sistema operacional, execute no formato (.dll). 
 
+```
+dotnet TimedosSonhos.dll
+```
+Esse comando deve ser executado somente dentro da pasta "net8.0"
+
 * Preferência utilizar o Prompt de Comando ou o Powershell.
 
 
