@@ -60,7 +60,7 @@ Depois do término do download, extraia os arquivos compactados na pasta desejad
 ```
 dotnet TimedosSonhos.dll
 ```
-Esse comando deve ser executado somente dentro da pasta "net8.0"
+Esse comando deve ser executado dentro da pasta extraída.
 
 * Preferência utilizar o Prompt de Comando ou o Powershell.
 
